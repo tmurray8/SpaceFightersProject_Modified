@@ -1,0 +1,36 @@
+<!-- Developed by Tristin Murray -->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Space Fighter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <!-- Game title and statistics display -->
+    <h1 style="text-align: center;">Space Fighter</h1>
+    <h2 style="text-align: center;">Game Statistics</h2>
+    <div id="gameStats" style="text-align: center;"></div>
+    <div id="gameboard" class="board"></div>
+
+    <!--
+         Custom Game Over banner that appears when the player defeats all aliens.
+         It shows the final stats and includes a Play Again button.
+    -->
+    <div id="gameOverBanner" class="hidden">
+        <h1>GAME OVER!</h1>
+        <p id="finalStats"></p>
+        <button onClick="location.reload()">Play Again</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
